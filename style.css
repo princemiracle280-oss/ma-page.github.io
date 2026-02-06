@@ -1,0 +1,78 @@
+*{
+   margin: 0;
+   padding: 0;
+}
+body{
+   background-color: blue;
+}
+html {
+  scroll-behavior: smooth;
+}
+header{
+   background-color: rgb(255, 255, 255);
+   height: 75px;
+   align-items: center;
+   justify-content: center;
+   display: flex;
+}
+header nav{
+   display: flex;
+   gap: 40px;
+}
+header nav a{
+   color: blue;
+   font-size: 25px;
+   font-family: Impact, Haettenschweiler, 'Arial Narrow Bold', sans-serif;
+   text-decoration: none;
+}
+header nav a:hover{
+   color: rgb(255, 0, 0);
+   
+}
+section{
+   display: flex;
+   justify-content: center;
+   gap: 30px;
+}
+section .gauche img{
+   width: 700px;
+   height: auto;
+}
+section .droite h1{
+   color: rgb(255, 0, 0);
+   font-size: 70px;
+   text-align: center;
+}
+section .droite p{
+   padding: 40px 15px 0 0;
+   font-size: 35px;
+   color: rgb(248, 248, 248);
+}
+section .gauche h1{
+    color: rgb(255, 0, 0);
+   font-size: 70px;
+   text-align: center;
+}
+section .gauche p{
+    padding: 40px 0 0 15px;
+   font-size: 35px;
+   color: rgb(255, 255, 255);
+}
+section .slider {
+   width: 700px;
+   height: 400px;
+  overflow: hidden;
+  display: flex;
+}
+
+.slider img {
+  width: 100%;
+  flex-shrink: 0;
+  animation: slide 6s infinite;
+}
+
+@keyframes slide {
+  0%   { transform: translateX(0); }
+  50%  { transform: translateX(-100%); }
+  100% { transform: translateX(0); }
+}
